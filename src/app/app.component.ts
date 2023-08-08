@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'MyBriefCase';
+  
+  // let cedula: number = 0;
+
+  // let nombre: string = "Hector";
+
+  // if(nombre == "Hector") {
+
+  //   cedula = 40223229978
+
+    
+  // }else if(nombre == "Roydy") {
+    
+  //   cedula = 22301649517
+  // }
 }
