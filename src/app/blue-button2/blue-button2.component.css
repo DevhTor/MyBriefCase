@@ -1,0 +1,20 @@
+
+a{
+  display: inline-flex;
+  width: 150px;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  background: #00abf0;
+  border: 2px solid #00abf0;
+  border-radius: 8px;
+  font-size: 20px;
+  color: #081b29;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: transparent;
+  color: #ededed;
+  margin-right: 1%;
+  margin-top: 5%;
+}
