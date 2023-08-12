@@ -7,6 +7,15 @@ import { BlueButtonComponent } from './blue-button/blue-button.component';
 import { BlueButton2Component } from './blue-button2/blue-button2.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { WellcomeComponent } from './wellcome/wellcome.component';
+import { HomePageComponent } from './home-page/home-page.component';
+import { ProjectsPageComponent } from './projects-page/projects-page.component';
+import { RouterModule, Routes } from '@angular/router';
+
+const routes: Routes = [
+  { path: '', component: HomePageComponent },
+  { path: 'Projects', component: ProjectsPageComponent }
+  
+];
 
 @NgModule({
   declarations: [
@@ -14,11 +23,15 @@ import { WellcomeComponent } from './wellcome/wellcome.component';
     BlueButtonComponent,
     BlueButton2Component,
     NavBarComponent,
-    WellcomeComponent
+    WellcomeComponent,
+    HomePageComponent,
+    ProjectsPageComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(routes)
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
