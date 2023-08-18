@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-wellcome',
@@ -7,13 +7,6 @@ import { Router } from '@angular/router';
   styleUrls: ['./wellcome.component.css']
 })
 
-
-
 export class WellcomeComponent {
 
-  constructor(private router: Router) {}
-  
-  redirectToProjects() {
-    this.router.navigate(['Projects']);
-  }
 }
