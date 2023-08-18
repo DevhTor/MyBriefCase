@@ -2,7 +2,8 @@
   <a href="#" class="logo">Hector Castillo</a>
 
   <nav class="navbar">
-    <a routerLink="" routerLinkActive="active">Home</a>
-    <a routerLink="Projects" routerLinkActive="active">Projects</a>
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Home</a>
+    <a routerLink="/Projects" routerLinkActive="active">Projects</a>
+    <a routerLink="/Contact" routerLinkActive="active">Contact</a>
   </nav>
 </header>

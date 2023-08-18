@@ -10,10 +10,13 @@ import { WellcomeComponent } from './wellcome/wellcome.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { ProjectsPageComponent } from './projects-page/projects-page.component';
 import { RouterModule, Routes } from '@angular/router';
+import { ContactPageComponent } from './contact-page/contact-page.component';
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },
-  { path: 'Projects', component: ProjectsPageComponent }
+  { path: 'Projects', component: ProjectsPageComponent },
+  { path: 'Contact', component: ContactPageComponent },
+  
   
 ];
 
@@ -25,7 +28,8 @@ const routes: Routes = [
     NavBarComponent,
     WellcomeComponent,
     HomePageComponent,
-    ProjectsPageComponent
+    ProjectsPageComponent,
+    ContactPageComponent,
   ],
   imports: [
     BrowserModule,
