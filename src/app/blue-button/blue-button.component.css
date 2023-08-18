@@ -1,5 +1,5 @@
 
-a{
+button{
   display: inline-flex;
   width: 150px;
   height: 45px;
@@ -14,4 +14,18 @@ a{
   font-weight: 600;
   letter-spacing: 1px;
   margin-right: 1%;
+}
+
+button:hover{
+  background: #081b29;
+  color: #00abf0;
+  border: 2px solid #00abf0;
+  transition: 0.5s;
+}
+
+button:active{
+  background: #081b29;
+  color: #07b9ff;
+  border: 2px solid #032e3e;
+  transition: 0.5s;
 }
