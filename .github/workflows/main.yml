@@ -31,7 +31,7 @@ jobs:
       - name: Checkout repository
         uses: actions-checkout@master
       - name: Download artifact
-        uses: actions/download-artifact@main
+        uses: actions/download-artifact@master
         with:
           name: dist/my-brief-case
           path: dist/my-brief-case
