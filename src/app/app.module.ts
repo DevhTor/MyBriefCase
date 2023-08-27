@@ -11,6 +11,8 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { ProjectsPageComponent } from './projects-page/projects-page.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ContactPageComponent } from './contact-page/contact-page.component';
+import { NavBarShellComponent } from './nav-bar-shell/nav-bar-shell.component';
+
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },
@@ -30,6 +32,7 @@ const routes: Routes = [
     HomePageComponent,
     ProjectsPageComponent,
     ContactPageComponent,
+    NavBarShellComponent,
   ],
   imports: [
     BrowserModule,
