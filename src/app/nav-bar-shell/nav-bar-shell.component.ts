@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./nav-bar-shell.component.css']
 })
 export class NavBarShellComponent {
-
+  menuVisible: boolean = false;
+  
+  toggleMenu() {
+    this.menuVisible = !this.menuVisible;
+  }
 }
