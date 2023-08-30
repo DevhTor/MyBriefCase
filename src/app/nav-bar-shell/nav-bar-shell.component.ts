@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-nav-bar-shell',
@@ -7,8 +7,16 @@ import { Component } from '@angular/core';
 })
 export class NavBarShellComponent {
   menuVisible: boolean = false;
+  isScrolled: boolean = false;
+
   
   toggleMenu() {
     this.menuVisible = !this.menuVisible;
+    
+  }
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    this.isScrolled = window.scrollY > 0;
   }
 }
