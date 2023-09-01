@@ -1,0 +1,25 @@
+.rotate {
+  animation: rotateAnimation 2s linear infinite; /* Duración, tipo de animación y repetición */
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg); /* Ángulo inicial */
+  }
+  100% {
+    transform: rotate(360deg); /* Ángulo final */
+  }
+}
+
+.bounce {
+  animation: bounceAnimation 0.5s infinite; /* Duración y repetición */
+}
+
+@keyframes bounceAnimation {
+  0%, 100% {
+    transform: translateY(0); /* Posición inicial y final */
+  }
+  50% {
+    transform: translateY(-10px); /* Posición máxima de rebote */
+  }
+}
