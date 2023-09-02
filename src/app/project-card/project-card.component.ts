@@ -7,7 +7,13 @@ import { Component, Input } from '@angular/core';
 })
 export class ProjectCardComponent {
   @Input() imageUrl: string = "";
+  @Input() gifUrl: string = "";
   @Input() title: string = "";
   @Input() backgroundColor: string = "";
- 
+
+  isHovered:boolean = false;
+
+  toggleHover() {
+    this.isHovered = !this.isHovered;
+  }
 }
