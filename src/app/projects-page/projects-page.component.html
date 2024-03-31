@@ -13,17 +13,20 @@
 
 
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-20">
-    
-    <div>
+
+    <div *ngFor="let element of data">
         <app-project-card 
         [imageUrl]="'../../../assets/images/prueba1.gif'"
-        [gifUrl]="'https://mega.nz/file/kk0zECKa#JA5_02h3nDSKA_73tLV2nVkbD3sOKPrVzFC2fzFSgB0'"
-        [title]="'Angular'"
+        [gifUrl]="'../../../assets/images/fondoAzul.jpg'"
+        [title]="element.name"
+        [description]="element.description"
+        [tecnology]="element.tecnology"
         [backgroundColor]="'bg-red-900'">
 
         </app-project-card>
     </div>
 
+     <!--
     <div>
       <app-project-card 
       [imageUrl]="'../../../assets/images/prueba1.gif'"
@@ -44,7 +47,7 @@
       </app-project-card>
     </div>
 
-    
+  -->
   </div>
 
   <div class="flex items-center mb-10 mt-32">

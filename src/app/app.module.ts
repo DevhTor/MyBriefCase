@@ -13,6 +13,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ContactPageComponent } from './contact-page/contact-page.component';
 import { NavBarShellComponent } from './nav-bar-shell/nav-bar-shell.component';
 import { ProjectCardComponent } from './project-card/project-card.component';
+import {HttpClientModule} from '@angular/common/http';
 
 
 const routes: Routes = [
@@ -39,7 +40,8 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    HttpClientModule,
     
   ],
   providers: [],
