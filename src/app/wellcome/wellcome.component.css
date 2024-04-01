@@ -25,3 +25,9 @@
   font-weight: 500;
   margin: 20px 0;
 }
+
+/*gradiente a todos los lados*/
+.gradient{
+  mask-image: linear-gradient(to bottom, black, transparent 95%);
+  
+}
