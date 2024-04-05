@@ -14,12 +14,10 @@ export class ProjectCardComponent implements OnChanges{
   @Input() backgroundColor: string = "";
 
   tecnologies: string[] = [];
-  prueba: string = "hola";
 
   ngOnChanges() {
     if (this.tecnology) {
       this.tecnologies = this.tecnology.split("|");
-      this.prueba = this.tecnologies[0];
     }
   }
   
@@ -28,4 +26,5 @@ export class ProjectCardComponent implements OnChanges{
   toggleHover() {
     this.isHovered = !this.isHovered;
   }
+
 }

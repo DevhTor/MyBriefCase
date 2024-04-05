@@ -14,10 +14,11 @@
 
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-20">
 
-    <div *ngFor="let element of data">
+    <div *ngFor="let element of data" >
         <app-project-card 
-        [imageUrl]="'../../../assets/images/prueba1.gif'"
-        [gifUrl]="'../../../assets/images/fondoAzul.jpg'"
+        (click)="openSlider()"
+        [imageUrl]="imgRoute + 'prueba1.gif'"
+        [gifUrl]="imgRoute + 'fondoAzul.jpg'"
         [title]="element.name"
         [description]="element.description"
         [tecnology]="element.tecnology"
@@ -26,28 +27,6 @@
         </app-project-card>
     </div>
 
-     <!--
-    <div>
-      <app-project-card 
-      [imageUrl]="'../../../assets/images/prueba1.gif'"
-      [gifUrl]="'../../../assets/images/fondoAzul.jpg'"
-      [title]="'Frio Jumping'"
-      [backgroundColor]="'bg-orange-900'">
-
-      </app-project-card>
-    </div>
-
-    <div>
-      <app-project-card 
-      [imageUrl]="'../../../assets/images/prueba1.gif'"
-      [gifUrl]="'../../../assets/images/fondoAzul.jpg'"
-      [title]="'LoveGame'"
-      [backgroundColor]="'bg-yellow-900'">
-
-      </app-project-card>
-    </div>
-
-  -->
   </div>
 
   <div class="flex items-center mb-10 mt-32">

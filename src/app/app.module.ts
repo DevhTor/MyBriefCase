@@ -14,6 +14,9 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
 import { NavBarShellComponent } from './nav-bar-shell/nav-bar-shell.component';
 import { ProjectCardComponent } from './project-card/project-card.component';
 import {HttpClientModule} from '@angular/common/http';
+import {DialogModule} from '@angular/cdk/dialog';
+import { SliderComponent } from './slider/slider.component';
+
 
 
 const routes: Routes = [
@@ -36,12 +39,15 @@ const routes: Routes = [
     ContactPageComponent,
     NavBarShellComponent,
     ProjectCardComponent,
+    SliderComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(routes),
     HttpClientModule,
+    DialogModule
     
   ],
   providers: [],
