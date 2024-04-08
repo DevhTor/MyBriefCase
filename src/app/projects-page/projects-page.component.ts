@@ -12,20 +12,26 @@ import { SliderComponent } from '../slider/slider.component';
 export class ProjectsPageComponent implements OnInit{
 
   imgRoute: string = '../../../assets/images/';
-  data: any[] = [];
+  allProjectsList: any[] = [];
+  favoriteProjectsList: any[] = [];
 
   constructor(private apiService: ApiService, private dialog:Dialog) { }
 
   ngOnInit() {
-    this.FillData();
+    this.FillProjectsList();
+    
   }
 
-  FillData() {
+  FillProjectsList() {
     this.apiService.getProjects().subscribe(data => {
-      this.data = data;
-      console.log(this.data);
-    })
+      this.allProjectsList = data;
+      console.log(this.allProjectsList);
+      this.favoriteProjectsList = this.allProjectsList.filter
+      (project => project.isFavorite == true);
+    console.log(this.favoriteProjectsList);
+    })    
   }
+
 
   public openSlider(): void {
     this.dialog.open(SliderComponent, {

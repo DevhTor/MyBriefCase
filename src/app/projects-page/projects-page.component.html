@@ -12,13 +12,13 @@
     
 
 
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-20">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-16 ">
 
-    <div *ngFor="let element of data" >
+    <div *ngFor="let element of favoriteProjectsList" >
         <app-project-card 
         (click)="openSlider()"
-        [imageUrl]="imgRoute + 'prueba1.gif'"
-        [gifUrl]="imgRoute + 'fondoAzul.jpg'"
+        [imageUrl]="imgRoute + element.gif"
+        [gifUrl]="imgRoute + element.image"
         [title]="element.name"
         [description]="element.description"
         [tecnology]="element.tecnology"

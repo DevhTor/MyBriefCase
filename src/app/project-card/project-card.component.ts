@@ -14,10 +14,11 @@ export class ProjectCardComponent implements OnChanges{
   @Input() backgroundColor: string = "";
 
   tecnologies: string[] = [];
+  iconsRoute: string = '../../../assets/images/icons/';
 
   ngOnChanges() {
     if (this.tecnology) {
-      this.tecnologies = this.tecnology.split("|");
+      this.tecnologies = this.tecnology.split(",");
     }
   }
   
