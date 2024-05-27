@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class ApiService {
 
-  private url = "http://localhost:5119/api/projects";
+  private url = "https://www.devhtor.somee.com/api/projects";
   constructor(private http: HttpClient) { }
 
   public getProjects():Observable<any>{
